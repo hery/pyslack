@@ -58,7 +58,7 @@ class SlackClient(object):
         })
         return self._make_request(method, params)
 
-    def chat_update_message(self, channel, text, timestamp, **params):
+    def chat_update_message(self, channel, text, timestamp):
         """chat.update
 
         This method updates a message.
