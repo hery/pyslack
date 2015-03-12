@@ -72,11 +72,11 @@ class SlackClient(object):
         `text`: New text for the message, using the default formatting rules. (e.g: "Hello world")
         """
         method = 'chat.update'
-        params.update({
+        params = {
             'channel': channel,
             'text': text,
             'ts': timestamp,
-        })
+        }
         return self._make_request(method, params)
 
 
