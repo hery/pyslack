@@ -60,11 +60,9 @@ class SlackClient(object):
 
     def chat_update_message(self, channel, text, timestamp):
         """chat.update
+        https://api.slack.com/methods/chat.update
 
         This method updates a message.
-
-        Check docs for all available **params options:
-        https://api.slack.com/methods/chat.update
 
         Required parameters:
         `ts`:  Timestamp of the message to be updated (e.g: "1405894322.002768")    
